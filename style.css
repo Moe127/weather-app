@@ -1,0 +1,8 @@
+/* general styles */
+
+body {
+  background-image: url("sky.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

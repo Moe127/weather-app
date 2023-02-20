@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+      integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- main.js -->
+    <script defer src="main.js"></script>
+  </head>
+  <body class="vh-100">
+    <div
+      class="container-fluid m-auto h-100 bg-dark bg-opacity-50 text-white p-5"
+    >
+      <div
+        class="row align-baseline align-items-center justify-content-center h-100"
+      >
+        <div class="col-md-3">
+          <div class="row flex-column w-100 gy-2">
+            <span class="current-condition h3"></span>
+            <img src="#" class="temp-icon w-25" />
+            <span class="city-name h4 text-uppercase"></span>
+            <span class="date fw-bold h5"></span>
+            <span class="time"></span>
+            <span class="temp h1"></span>
+
+            <div class="input-group">
+              <div class="form-outline">
+                <input
+                  type="search"
+                  id="search"
+                  name="search"
+                  class="form-control"
+                  placeholder="search location"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="row future-weather"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
