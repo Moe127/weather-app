@@ -183,7 +183,7 @@ function displayFutureWeather(
 
 /***************************************************************************************/
 // make weatherApp on every keypress on keyboard
-search.addEventListener("keypress", (e) => {
+search.addEventListener("keydown", (e) => {
   // getting the search input value and pass it to the weatherApp as param
   weatherApp(e.target.value);
 });
