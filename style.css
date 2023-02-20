@@ -1,8 +1,16 @@
 /* general styles */
 
 body {
+  height: 100vh;
   background-image: url("sky.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  body {
+    height: 100%;
+    text-align: center;
+  }
 }
