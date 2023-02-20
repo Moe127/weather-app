@@ -39,12 +39,12 @@ async function weatherApp(searchInput) {
   const cityRegexp = /^[a-zA-Z\u0080-\u024F\s\/\-\)\(\`\.\"\']+$/;
   if (cityRegexp.test(searchInput)) {
     endpoint = `
-  http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${searchInput}&days=3&aqi=no&alerts=no`;
+  https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${searchInput}&days=3&aqi=no&alerts=no`;
   } else {
     searchInput = "cairo";
 
     endpoint = `
-  http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${searchInput}&days=3&aqi=no&alerts=no`;
+  https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${searchInput}&days=3&aqi=no&alerts=no`;
   }
 
   var weather = await fetch(endpoint);
