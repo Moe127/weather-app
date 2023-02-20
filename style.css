@@ -13,4 +13,11 @@ body {
     height: 100%;
     text-align: center;
   }
+  img {
+    margin: auto;
+  }
+  input[type="search"] {
+    width: 100%;
+    margin: auto;
+  }
 }
